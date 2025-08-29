@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import img1 from "../assets/WhatsApp Image 2025-08-29 at 11.44.10 PM.jpeg";
+import img1 from "../assets/Screenshot 2025-08-30 012202.png";
 import img2 from "../assets/Screenshot 2025-08-07 180358.png"
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(0);
