@@ -3,7 +3,7 @@ const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api
 // Submit contact form
 export const submitContactForm = async (formData) => {
   try {
-    const response = await fetch(`${API_BASE_URL}/contact/submit`, {
+    const response = await fetch(https://portfolio1-5ndr.onrender.com/api/contact/submit, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
