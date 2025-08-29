@@ -10,7 +10,8 @@ const Projects = () => {
       subtitle: "Reward-based Task Platform",
       description: "Built a full-stack platform where users earn rewards by completing tasks like app installs and quizzes.",
       category: "Full Stack",
-      image: img1, // ✅ project 1 image
+      image: img1,
+      link:"https://github.com/yogeshsadgir0005/earnkaro",
       technologies: [
         { name: "Node.js", color: "bg-green-100 text-green-800" },
         { name: "Express.js", color: "bg-gray-100 text-gray-800" },
@@ -40,7 +41,8 @@ const Projects = () => {
       subtitle: "Freelance Marketplace Platform",
       description: "Built a full-stack freelance marketplace connecting clients and freelancers with secure, role-based authentication.",
       category: "Full Stack",
-      image: img2, // ✅ project 2 image
+      image: img2,
+      link:"https://github.com/yogeshsadgir0005/skillbridge",
       technologies: [
         { name: "Node.js", color: "bg-green-100 text-green-800" },
         { name: "Express.js", color: "bg-gray-100 text-gray-800" },
@@ -119,7 +121,7 @@ const Projects = () => {
                       Live Demo
                     </a>
                     <a 
-                      href="#"
+                      href={currentProject.link}
                       className="btn btn-secondary btn-sm bg-white/90 text-secondary-800 border-white/90 hover:bg-white"
                     >
                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
