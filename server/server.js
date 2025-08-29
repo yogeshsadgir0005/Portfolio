@@ -35,15 +35,13 @@ app.use((err, req, res, next) => {
 });
 
 // Database connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://yogeshsadgir05:Sadgir0520@cluster0.6ws43d6.mongodb.net/myDB?retryWrites=true&w=majority&appName=Cluster0
-'
-})
-.then(() => {
-  console.log('Connected to MongoDB');
-  app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/yogesh-portfolio')
+  .then(() => {
+    console.log('✅ Connected to MongoDB');
+    app.listen(PORT, () => {
+      console.log(`🚀 Server running on port ${PORT}`);
+    });
+  })
+  .catch((error) => {
+    console.error('❌ Database connection failed:', error.message);
   });
-})
-.catch((error) => {
-  console.error('Database connection failed:', error);
-});
