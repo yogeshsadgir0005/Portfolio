@@ -44,7 +44,7 @@ const Projects = () => {
       category: "Full Stack",
       image: img2,
       gitlink:"https://github.com/yogeshsadgir0005/skillbridge",
-      livelink:"https://earnkaro-flax.vercel.app/",
+      livelink:"https://skillbridge-eosin.vercel.app/",
       technologies: [
         { name: "Node.js", color: "bg-green-100 text-green-800" },
         { name: "Express.js", color: "bg-gray-100 text-gray-800" },
