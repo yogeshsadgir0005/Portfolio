@@ -11,7 +11,8 @@ const Projects = () => {
       description: "Built a full-stack platform where users earn rewards by completing tasks like app installs and quizzes.",
       category: "Full Stack",
       image: img1,
-      link:"https://github.com/yogeshsadgir0005/earnkaro",
+      gitlink:"https://github.com/yogeshsadgir0005/earnkaro",
+      livelink:"https://earnkaro-flax.vercel.app/",
       technologies: [
         { name: "Node.js", color: "bg-green-100 text-green-800" },
         { name: "Express.js", color: "bg-gray-100 text-gray-800" },
@@ -42,7 +43,8 @@ const Projects = () => {
       description: "Built a full-stack freelance marketplace connecting clients and freelancers with secure, role-based authentication.",
       category: "Full Stack",
       image: img2,
-      link:"https://github.com/yogeshsadgir0005/skillbridge",
+      gitlink:"https://github.com/yogeshsadgir0005/skillbridge",
+      livelink:"https://earnkaro-flax.vercel.app/",
       technologies: [
         { name: "Node.js", color: "bg-green-100 text-green-800" },
         { name: "Express.js", color: "bg-gray-100 text-gray-800" },
@@ -112,7 +114,7 @@ const Projects = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-6 left-6 right-6 flex gap-4">
                     <a 
-                      href="#"
+                      href={currentProject.livelink}
                       className="btn btn-primary btn-sm group/btn"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -121,7 +123,7 @@ const Projects = () => {
                       Live Demo
                     </a>
                     <a 
-                      href={currentProject.link}
+                      href={currentProject.gitlink}
                       className="btn btn-secondary btn-sm bg-white/90 text-secondary-800 border-white/90 hover:bg-white"
                     >
                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
