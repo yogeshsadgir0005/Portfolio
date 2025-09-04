@@ -44,23 +44,28 @@ export const submitContact = async (req, res) => {
       },
     });
 
-    // Send email to you
     await transporter.sendMail({
       from: process.env.EMAIL_FROM,
-      to: process.env.EMAIL_USER, // your Gmail inbox
+      to: process.env.EMAIL_USER,
       subject: `📩 New Contact Form: ${subject}`,
-      text: `
-        Name: ${name}
-        Email: ${email}
-        Subject: ${subject}
-        Message: ${message}
-      `,
       html: `
         <h2>New Contact Form Submission</h2>
         <p><b>Name:</b> ${name}</p>
         <p><b>Email:</b> ${email}</p>
         <p><b>Subject:</b> ${subject}</p>
         <p><b>Message:</b><br/> ${message}</p>
+      `,
+    });
+
+    await transporter.sendMail({
+      from: process.env.EMAIL_FROM,
+      to: email, // HR email (the one who filled the form)
+      subject: "✅ Thank you for contacting me",
+      html: `
+        <p>Dear ${name},</p>
+        <p>Thank you for reaching out. I have received your message and will get back to you soon.</p>
+        <br/>
+        <p>Best regards,<br/>Yogesh Sadgir</p>
       `,
     });
 
