@@ -1,4 +1,4 @@
-# [🌐 Live Previews : https://portfolio-seven-sepia-16.vercel.app/ ](https://portfolio-seven-sepia-16.vercel.app/)
+# [🌐 Live Preview : https://portfolio-seven-sepia-16.vercel.app/ ](https://portfolio-seven-sepia-16.vercel.app/)
 
 # Yogesh Sadgir - Portfolio Website
 
