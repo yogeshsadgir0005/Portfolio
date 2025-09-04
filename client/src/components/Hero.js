@@ -147,7 +147,7 @@ const Hero = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-3 gap-8 pt-8 border-t border-secondary-200 animate-slide-up">
+        <div className="grid grid-cols-3 gap-8 py-8 border-t border-secondary-200 animate-slide-up">
           <div className="text-center group">
             <div className="text-3xl md:text-4xl font-bold gradient-text mb-2 group-hover:scale-110 transition-transform duration-200">
               1+
