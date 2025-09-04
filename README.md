@@ -32,4 +32,4 @@ A modern, responsive portfolio website built with the MERN stack (MongoDB, Expre
 
 ## 📂 Project Structure
 
-N Stack and Tailwind CSS
+MERN Stack and Tailwind CSS
