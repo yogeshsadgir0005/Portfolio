@@ -2,6 +2,19 @@ import Contact from '../models/Contact.js';
 import { validationResult } from 'express-validator';
 import nodemailer from 'nodemailer';
 
+// Get all contacts (admin only)
+export const getContacts = async (req, res) => {
+  try {
+    const contacts = await Contact.find()
+      .sort({ createdAt: -1 })
+      .limit(50);
+    res.json({ success: true, count: contacts.length, data: contacts });
+  } catch (error) {
+    console.error('Get contacts error:', error);
+    res.status(500).json({ success: false, message: 'Failed to fetch contacts' });
+  }
+};
+
 export const submitContact = async (req, res) => {
   try {
     // Validate request
