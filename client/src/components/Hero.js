@@ -150,19 +150,19 @@ const Hero = () => {
         <div className="grid grid-cols-3 gap-8 pt-16 border-t border-secondary-200 animate-slide-up">
           <div className="text-center group">
             <div className="text-3xl md:text-4xl font-bold gradient-text mb-2 group-hover:scale-110 transition-transform duration-200">
-              2+
+              1+
             </div>
             <p className="text-secondary-600 font-medium">Years Experience</p>
           </div>
           <div className="text-center group">
             <div className="text-3xl md:text-4xl font-bold gradient-text mb-2 group-hover:scale-110 transition-transform duration-200">
-              10+
+              5+
             </div>
             <p className="text-secondary-600 font-medium">Projects Completed</p>
           </div>
           <div className="text-center group">
             <div className="text-3xl md:text-4xl font-bold gradient-text mb-2 group-hover:scale-110 transition-transform duration-200">
-              5+
+              4+
             </div>
             <p className="text-secondary-600 font-medium">Technologies</p>
           </div>
